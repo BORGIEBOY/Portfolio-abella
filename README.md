@@ -1,6 +1,6 @@
-# Portfolio - React.js Version
+# Portfolio - Vanilla HTML/CSS/JS Version
 
-This is your portfolio website converted to React.js from vanilla HTML/CSS/JS.
+This is your portfolio website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
@@ -8,46 +8,35 @@ This is your portfolio website converted to React.js from vanilla HTML/CSS/JS.
 Portfolio/
 ├── public/
 │   ├── index.html
+│   ├── script.js
 │   ├── profile.jpg
 │   ├── Project1.jpg
 │   ├── project2.jpg
 │   ├── project3.jpg
 │   └── project4.jpg
-├── src/
-│   ├── components/
-│   │   ├── Navbar.js
-│   │   ├── Hero.js
-│   │   ├── About.js
-│   │   ├── Services.js
-│   │   ├── Portfolio.js
-│   │   └── Contact.js
-│   ├── styles/
-│   │   └── index.css
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── vercel.json
+├── styles.css
+└── README.md
 ```
 
-## Components
+## Features
 
-### Navbar
+### Navigation
 - Fixed navigation bar with smooth scrolling
 - Responsive hamburger menu for mobile devices
 - Active section highlighting
 
-### Hero
+### Hero Section
 - Main landing section with gradient text
 - Call-to-action buttons for navigation
 - Animated scroll indicator
 
-### About
+### About Section
 - Profile image
 - Bio/description
 - Tabbed interface for Skills, Experience, and Education
 - Animated skill bars on scroll
 
-### Services
+### Services Section
 - 3-column grid layout (responsive)
 - Service cards with icons and descriptions
 
@@ -61,42 +50,41 @@ Portfolio/
 - Social media links
 - Contact form with form validation
 
-## Installation
+## How to Use
 
-1. **Copy image files** to the `public/` folder:
-   - profile.jpg
-   - Project1.jpg
-   - project2.jpg
-   - project3.jpg
-   - project4.jpg
+1. **Open the project**:
+   - Open `public/index.html` in your web browser
+   - Or serve the files using a local web server
 
-2. **Install dependencies**:
+2. **For local development with a server**:
    ```bash
-   npm install
+   # Using Python (if installed)
+   python -m http.server 8000
+
+   # Using Node.js (if installed)
+   npx serve public
+
+   # Or use any static file server
    ```
 
-3. **Start the development server**:
-   ```bash
-   npm start
-   ```
-
-The application will open at `http://localhost:3000`
+3. **Access the portfolio**:
+   - Open `http://localhost:8000` (or your server port) in your browser
 
 ## Features Implemented
 
 ✅ **Responsive Design** - Mobile-first approach with breakpoints at 768px and 480px
-✅ **Smooth Scrolling** - Native HTML scroll behavior with React navigation
+✅ **Smooth Scrolling** - Native HTML scroll behavior with JavaScript navigation
 ✅ **Mobile Menu** - Hamburger menu that closes on link clicks
 ✅ **Tab System** - About section with Skills, Experience, Education tabs
 ✅ **Skill Animations** - Skill bars animate when scrolling into view
-✅ **Form Handling** - Contact form with success message
+✅ **Form Handling** - Contact form with basic validation
 ✅ **Icon Library** - Font Awesome icons integrated
 ✅ **CSS Variables** - Easy theme customization
 
 ## Customization
 
 ### Change Colors
-Edit the CSS variables in `src/styles/index.css`:
+Edit the CSS variables in `styles.css`:
 ```css
 :root {
     --black: #000000;
@@ -106,9 +94,11 @@ Edit the CSS variables in `src/styles/index.css`:
 ```
 
 ### Update Content
-Each component can be easily modified:
-- Component data is defined inside each component
-- Example: `About.js` has `skills`, `experience`, and `education` arrays
+Edit the HTML content directly in `public/index.html`:
+- Navigation links in the `<nav>` section
+- Hero section content
+- About section tabs and content
+- Services, Portfolio, and Contact sections
 - Update these arrays to change the displayed content
 
 ### Add Social Links
