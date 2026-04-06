@@ -2,8 +2,12 @@
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const target = this.getAttribute('href');
+                if (!target || target === '#' || !document.querySelector(target)) {
+                    return;
+                }
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                document.querySelector(target).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
