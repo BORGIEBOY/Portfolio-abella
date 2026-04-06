@@ -46,16 +46,16 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="social-links">
-                            <a href="#" title="Facebook">
+                            <a href="https://facebook.com" title="Facebook" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook"></i>
                             </a>
-                            <a href="#" title="Instagram">
+                            <a href="https://instagram.com" title="Instagram" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a href="#" title="LinkedIn">
+                            <a href="https://linkedin.com" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin"></i>
                             </a>
-                            <a href="#" title="Twitter">
+                            <a href="https://twitter.com" title="Twitter" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-twitter"></i>
                             </a>
                         </div>

@@ -19,8 +19,12 @@ const Navbar = ({ activeSection, setActiveSection }) => {
                     {navLinks.map((link) => (
                         <li key={link}>
                             <a
+                                href="#"
                                 className={`nav-link ${activeSection === link ? 'active' : ''}`}
-                                onClick={() => handleNavClick(link)}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleNavClick(link);
+                                }}
                             >
                                 {link.charAt(0).toUpperCase() + link.slice(1)}
                             </a>

@@ -3,25 +3,25 @@ import React from 'react';
 const Portfolio = () => {
     const portfolioItems = [
         {
-            image: 'Project1.jpg',
+            image: '/Project1.jpg',
             title: 'Project 1 FIGMA',
             description: 'Shoes Product project',
             link: '#',
         },
         {
-            image: 'project2.jpg',
+            image: '/project2.jpg',
             title: 'Project 2 FIGMA',
             description: 'Music Playlist app',
             link: '#',
         },
         {
-            image: 'project3.jpg',
+            image: '/project3.jpg',
             title: 'Project 3 FIGMA',
             description: 'Airpods Product project',
             link: '#',
         },
         {
-            image: 'project4.jpg',
+            image: '/project4.jpg',
             title: 'Project 4 FIGMA',
             description: 'LocAlis Product project',
             link: '#',
