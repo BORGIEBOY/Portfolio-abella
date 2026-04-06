@@ -51,3 +51,4 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector('.tab-content#skills'));
+//done
